@@ -4,8 +4,12 @@
 - ___27-April-2021___
     * _Print passing status of student using only if-else statements without nesting nor using logical operators._
     
-- 
-
-<!--
-<img src="https://www.ibm.com/design/language/877b208e9d05b37650a70e55867861bd/core_gray60_on_white.svg" alt="IBM" width="100"/>
-<img src="https://images.credly.com/images/13a3eba1-55b5-4db0-82c3-8e4b768c8348/blob.png" alt="IIHT" width="100"/>-->
+- ___28-April-2021___
+    * _Best version creation of multiplication by putting input logic in an individual function._
+    * _Calculate Factorial of number entered by User._
+    * _Print Fibonacci Series upto 89._
+    * _Print Sum of first Hundred Natural Numbers._
+- ___29-April-2021___
+    * _Use Varargs argument to find sum of parameters._
+    * _Hands-on practice on using static and this pointer._
+    * _Hands-on practice by changing references for objects created._
