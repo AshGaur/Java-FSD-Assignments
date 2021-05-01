@@ -17,6 +17,8 @@
     * _Hands-on practice by changing references for objects created._
     
 - ___30-April-2021___
-    * _Own version for usage of Constructor and getter,setter methods_ (GetStudentPassStatus.java)
-    * _Hands-on practice on using packages with public class access, varargs_ (calculations/AnyNumberInputCalc.java , calculations/myutils/Calculate.java)
-    * _Hands-on practice with package and protected access members_ (calculations/UsingOtherMathFunctions.java , calculations/myutils/OtherMathProtectedFunctions.java)
+    * _Own version for usage of Constructor and getter,setter methods (**GetStudentPassStatus.java**)_
+    * _Hands-on practice on using packages with public class access, varargs (**calculations/AnyNumberInputCalc.java , calculations/myutils/Calculate.java**)_
+    * _Hands-on practice with package and protected access members (**calculations/UsingOtherMathFunctions.java , calculations/myutils/OtherMathProtectedFunctions.java**)_
+
+- ___Exercises for Week of 30th April___

@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------------------------
+Exercise1: Program to simulate traffic light behaviour.
+Exercise2: Recursive and non-recursive programs to find nth value in fibonacci series.
+Exercise3: Program to print prime numbers upto a given input number.
+Exercise4: Method to get date input and print duration in days,months,years from current system date.
+Exercise5: Method to find sum of cubes of digits of an n-digit number
+Exercise6: Method to return sorted array of reversed numbers from given array.
+Exercise7: Get second smallest number from a given array.
+Exercise8: Class with a method to calculate sum of first n natural numbers divisible by 3 or 5.
+---------------------------------------------------------------------------------------------------
