@@ -123,6 +123,7 @@ class SolutionMethods extends weekofapr30.Exercises678{
     }
 
     //Exercise 6
+    //Solution Method getSorted() inherited from weekApr.Exercises678.java
     void numReverseArraySort(Scanner sc){
         System.out.print("Enter array length:");
         int n = sc.nextInt();
@@ -145,6 +146,7 @@ class SolutionMethods extends weekofapr30.Exercises678{
     }
 
     //Exercise 7
+    //Solution Method getSecondSmallest() inherited from weekApr.Exercises678.java
     void secondSmallest(Scanner sc){
         System.out.print("Enter number of elements in array:");
         int n = sc.nextInt();
@@ -161,6 +163,7 @@ class SolutionMethods extends weekofapr30.Exercises678{
     }
 
     //Exercise 8
+    //Solution Method calculateSum() inherited from weekApr.Exercises678.java
     void sumOfDivBy3Or5(Scanner sc){
         System.out.print("Enter number of terms:");
         int n = sc.nextInt();
