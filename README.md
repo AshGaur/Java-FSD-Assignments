@@ -22,3 +22,11 @@
     * _Hands-on practice with package and protected access members (**calculations/UsingOtherMathFunctions.java , calculations/myutils/OtherMathProtectedFunctions.java**)_
 
 - ___Exercises for Week of 30th April___
+
+- ___01-May-2021___
+    * _Own Example for using enum (**MovieTicketsEnum.java**)_
+    * _Own Example for Function overriding (**InheritOverride**)_
+    * _Using final to stop method overriding (**InheritOverrideFinal**)_
+    * _Static methods inheritance (**StaticInheritance.java**)_
+    * _Allowed and illegal modifier combinations (**ModifierCombinations**)_
+    * _Hands-on practice with order and flow of Constructor overloading with Inheritance (**ConstructorInvocationInheritance.java**)_
