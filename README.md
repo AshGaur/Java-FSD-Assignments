@@ -23,10 +23,15 @@
 
 - ___Exercises for Week of 30th April___
 
-- ___01-May-2021___
+- ___03-May-2021___
     * _Own Example for using enum (**MovieTicketsEnum.java**)_
-    * _Own Example for Function overriding (**InheritOverride**)_
-    * _Using final to stop method overriding (**InheritOverrideFinal**)_
+    * _Own Example for Function overriding (**InheritOverride.java**)_
+    * _Using final to stop method overriding (**InheritOverrideFinal.java**)_
     * _Static methods inheritance (**StaticInheritance.java**)_
-    * _Allowed and illegal modifier combinations (**ModifierCombinations**)_
+    * _Allowed and illegal modifier combinations (**ModifierCombinations.java**)_
     * _Hands-on practice with order and flow of Constructor overloading with Inheritance (**ConstructorInvocationInheritance.java**)_
+    
+- ___04-May-2021___
+    * _Hands-on practice on Interfaces (**HandsOnInterface.java**)_
+    * _Concrete method declaration with keyword default(from java 1.8) in interfaces (**DefaultConcreteMethodInInterface.java**)_
+    * _Run type polymorphism and own example connected to a real-world scenario (**RunTimePolymorphism.java, OwnExampleRunTypePolyMorphism.java**)_
