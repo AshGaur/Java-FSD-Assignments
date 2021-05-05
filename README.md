@@ -35,3 +35,8 @@
     * _Hands-on practice on Interfaces (**HandsOnInterface.java**)_
     * _Concrete method declaration with keyword default(from java 1.8) in interfaces (**DefaultConcreteMethodInInterface.java**)_
     * _Run type polymorphism and own example connected to a real-world scenario (**RunTimePolymorphism.java, OwnExampleRunTypePolyMorphism.java**)_
+
+- ___Exercises for 05th May___
+
+- ___05-May-2021___
+    * _Using java.lang.String classes and SCP. (**UsingStrings.java**)_
