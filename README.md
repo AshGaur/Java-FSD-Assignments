@@ -40,3 +40,7 @@
 
 - ___05-May-2021___
     * _Using java.lang.String classes and SCP. (**UsingStrings.java**)_
+    
+- ___06-May-2021___
+    * _Using throws and try-catch for Exception Handling (**UsingThrowsDeclaration.java**)_
+    * _Custom Exceptions and using throw keyword (**StoreProcessing.java**)_
