@@ -14,7 +14,8 @@
 
 - ___May 07___
     - Display Timer on console. `may07/TimerThread.java`
-    <img src="may07/timer.gif" alt="Timer" width="500"/>
+     <img src="may07/timer.gif" alt="Timer" width="500"/>
+     
     - Display Random number between 1000 and 9999 without using inbuilt random methods. `may07/RandomNumber.java`
 
 - ___May 10___
