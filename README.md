@@ -44,3 +44,12 @@
 - ___06-May-2021___
     * _Using throws and try-catch for Exception Handling (**UsingThrowsDeclaration.java**)_
     * _Custom Exceptions and using throw keyword (**StoreProcessing.java**)_
+
+- ___Exercises for 07th May___
+
+- ___07-May-2021___
+    * _Trying assertions. (**AssertionTry.java**)
+    * _Simulating Live chat behaviour for different users with multithreading._ (**LiveChat.java**)
+    * _Using join in multithreading_ (**ThreadJoin.java**)
+    
+- ___Exercises for 10th May___
