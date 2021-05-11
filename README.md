@@ -49,7 +49,15 @@
 
 - ___07-May-2021___
     * _Trying assertions. (**AssertionTry.java**)
-    * _Simulating Live chat behaviour for different users with multithreading._ (**LiveChat.java**)
-    * _Using join in multithreading_ (**ThreadJoin.java**)
+    * _Simulating Live chat behaviour for different users with multithreading. (**LiveChat.java**)_
+    * _Using join in multithreading (**ThreadJoin.java**)_
     
 - ___Exercises for 10th May___
+
+- ___11-May-2021___
+    * _Hands-on practice on Using Regular Inner Classes. (**InternetSecurity.java**)_
+    * _Hands-on practice on MethodLocalInnerClass. (**MethodLocalInnerClass.java**)_
+    * _Hands-on practice on both types of Anonymous Inner Classes. (**ServerSecurity.java**)_
+    * _Hands-on practice on overriding toString() method. (**ToStringUsage.java**)_
+    * _Different scenarios of overloading methods. (**OverloadingTypes.java**)_
+    * _Create a thread and start it using as short code as possible. (**Processor.java**)_
