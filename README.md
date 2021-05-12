@@ -61,3 +61,5 @@
     * _Hands-on practice on overriding toString() method. (**ToStringUsage.java**)_
     * _Different scenarios of overloading methods. (**OverloadingTypes.java**)_
     * _Create a thread and start it using as short code as possible. (**Processor.java**)_
+
+- ___Exercises for 12th May___

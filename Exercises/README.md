@@ -24,3 +24,7 @@
     - Exercises 1,2,3 trafficSimulator,nthFibonacci,primesPrinter. `may10/Exercises123.java`
     - Custom Exception on given conditions Exercise 4,5. `may10/ValidateUser.java`
     - Custom Exception in package com.cg.eis.exception exercise 6. `may10/com/Exercise6.java`
+
+- ___May 12___
+    - Use a suitable collection and create a continous menu-driven program to serve the problem statement explained in [may12/ProblemStatement.png](may12/ProblemStatement.png) `may12/Runner.java`
+    <img src="may12/Run.gif" alt="Execution Output">
