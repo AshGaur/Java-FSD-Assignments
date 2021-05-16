@@ -48,7 +48,7 @@
 - ___Exercises for 07th May___
 
 - ___07-May-2021___
-    * _Trying assertions. (**AssertionTry.java**)
+    * _Trying assertions. (**AssertionTry.java**)_
     * _Simulating Live chat behaviour for different users with multithreading. (**LiveChat.java**)_
     * _Using join in multithreading (**ThreadJoin.java**)_
     

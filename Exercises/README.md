@@ -28,3 +28,9 @@
 - ___May 12___
     - Use a suitable collection and create a continous menu-driven program to serve the problem statement explained in [may12/ProblemStatement.png](may12/ProblemStatement.png) `may12/Runner.java`
     <img src="may12/Run.gif" alt="Execution Output">
+    
+- ___May 14___
+    - Added Project lombok Annotations to write cleaner code. `may12/Partcipant.java`
+    - Added option at menu command 6 to get sorted by data by available parameters i.e. ID,Skills,Firstname,Lastname by using Comparator interface and compare method.
+    - Added code to avoid duplicates by using HashSet, and overridden methods hashCode and equals methods.
+    - Opimized verbose code to make it look a little cleaner.
