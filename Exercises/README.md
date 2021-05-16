@@ -20,7 +20,7 @@
 
 - ___May 10___
     - Exercises problem statement are defined in [may10/JavaLabWork1.pdf](https://github.com/AshGaur/Java-FSD-Assignments/tree/main/Exercises/may10/JavaLabWork.pdf).
-    - Lab1 Make required classes heirarchy,members and methods as described in problem statement. `may10/library`
+    - Lab1 Make required classes hierarchy,members and methods as described in problem statement. `may10/library`
     - Exercises 1,2,3 trafficSimulator,nthFibonacci,primesPrinter. `may10/Exercises123.java`
     - Custom Exception on given conditions Exercise 4,5. `may10/ValidateUser.java`
     - Custom Exception in package com.cg.eis.exception exercise 6. `may10/com/Exercise6.java`
