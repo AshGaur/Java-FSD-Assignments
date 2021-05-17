@@ -63,3 +63,8 @@
     * _Create a thread and start it using as short code as possible. (**Processor.java**)_
 
 - ___Exercises for 12th May___
+
+- ___17-May-2021___
+    * _Using Anonymous Classes to use Comparator and achieve custom sort by any parameter as required. (**AnonymousClassCustomSort.java**)_
+    * _Creating Custom Generic Classes. (**CustomGeneric.java**)_
+    * _Using Lambda Expressions to create and run a thread. (**LambdaThreadRun.java**)_
