@@ -68,3 +68,12 @@
     * _Using Anonymous Classes to use Comparator and achieve custom sort by any parameter as required. (**AnonymousClassCustomSort.java**)_
     * _Creating Custom Generic Classes. (**CustomGeneric.java**)_
     * _Using Lambda Expressions to create and run a thread. (**LambdaThreadRun.java**)_
+    
+- ___Exercises for 18th May___
+
+- ___18-May-2021___
+    * _Using FileWriter and FileReader to write and read file. (**com/filehandling/FileHandling.java**)_
+    * _Using PrintStram and BufferedReader to write and read file. (**com/filehandling/UsingPrintStreamAndBufferedReader.java**)_
+    * _Using lambdas to write shorter code to create Comparator subclasses and return object ref to achieve custom Sort. Also has java8 list.sort(). (**LambdaComparatorCustomSort.java**)_
+    * _Shortest code to create Runnable subclass object and return ref after overriding run to call a method. (**UltraHD8K.java**)_
+    * _Using Co-Variants in Overriding (**CoVariantTrial.java**)_

@@ -34,3 +34,11 @@
     - Added option at menu command 6 to get sorted by data by available parameters i.e. ID,Skills,Firstname,Lastname by using Comparator interface and compare method.
     - Added code to avoid duplicates by using HashSet, and overridden methods hashCode and equals methods.
     - Opimized verbose code to make it look a little cleaner.
+
+- ___May 18___
+    - Exercies problem statement can be seen in [may18/FileIO.png](may18/FileIO.png)
+    - Print data from file with line numbers. `may18/FileDataLineNumber.java`
+    - Print number of characters,words and lines from the text in a file. `may18/NumberOfCharsWordsLines.java`
+    - Read filename and display File details. `may18/FileDetailsWithName.java`
+    - Copy from source to target file using thread by copying 10chars at a time. `may18/FileProgram.java`
+    <img src="may18/10CharsCopiedAtATime.gif" alt="File updating realtime every 5 secs with 10 characters at a time" width="500">
