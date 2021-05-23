@@ -42,3 +42,11 @@
     - Read filename and display File details. `may18/FileDetailsWithName.java`
     - Copy from source to target file using thread by copying 10chars at a time. `may18/FileProgram.java`
     <img src="may18/10CharsCopiedAtATime.gif" alt="File updating realtime every 5 secs with 10 characters at a time" width="500">
+    
+- ___May 21___
+    - Exercise problem statement: Make a menu-driven program to replicate the Layered Architecture which monitors and adds employees and also gives a scheme accordingly as mentioned here [may21/LA-Assignment.pdf](may21/LA-Assignment.pdf)
+    - Layer Overview:
+        * UI -> Contains Main class which has the logic to show all the ui options and is the runner of the application. `(may21.layeredarchitecture.ui.App.java)`
+        * Service -> Contains code from which UI connects to get a particular service as required. Also contains the Custom Exception thrown for invalid inputs. `(may21.layeredarchitecture.service.EmployeeServiceUser.java)`
+        * DAO -> Service gets connected to DAO which has code to connect to the database and make changes as required. `(may21.layeredarchitecture.dao.DaoClass.java)`
+        * Bean -> The employee details get mapped to the bean object and this object is then used to display,edit,delete,etc. It is the encapsulation of the employee details. `(may21.layeredarchitecture.bean.Employee.java)`

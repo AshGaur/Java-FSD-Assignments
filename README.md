@@ -77,3 +77,5 @@
     * _Using lambdas to write shorter code to create Comparator subclasses and return object ref to achieve custom Sort. Also has java8 list.sort(). (**LambdaComparatorCustomSort.java**)_
     * _Shortest code to create Runnable subclass object and return ref after overriding run to call a method. (**UltraHD8K.java**)_
     * _Using Co-Variants in Overriding (**CoVariantTrial.java**)_
+    
+- ___Exercises for 21th May___
