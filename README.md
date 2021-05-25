@@ -78,4 +78,6 @@
     * _Shortest code to create Runnable subclass object and return ref after overriding run to call a method. (**UltraHD8K.java**)_
     * _Using Co-Variants in Overriding (**CoVariantTrial.java**)_
     
-- ___Exercises for 21th May___
+- ___Exercises for 21th May (Layered Architecture Employee Management Application with JDBC)___
+
+- ___Exercises for 25th May (Layered Architecture Bank Account Management Application with JDBC and Spring)___

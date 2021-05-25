@@ -50,3 +50,14 @@
         * Service -> Contains code from which UI connects to get a particular service as required. Also contains the Custom Exception thrown for invalid inputs. `(may21.layeredarchitecture.service.EmployeeServiceUser.java)`
         * DAO -> Service gets connected to DAO which has code to connect to the database and make changes as required. `(may21.layeredarchitecture.dao.DaoClass.java)`
         * Bean -> The employee details get mapped to the bean object and this object is then used to display,edit,delete,etc. It is the encapsulation of the employee details. `(may21.layeredarchitecture.bean.Employee.java)`
+        
+- ___May 25___
+    - Exercies Problem Statement: Create a bank simulating application using Spring and Layered Architecture modules implemented are mentioned here [may25/ModulesRequired.jpg](may25/ModulesRequired.jpg)
+    - Layer Overview:
+        * UI -> Main Class (`may25.spring.walletapp.ui/App.java`)
+        * Service -> (`may25.spring.walletapp.service/WalletService.java`)
+                  -> (`may25.spring.walletapp.service/InvalidInputException.java`)
+        * DAO -> JDBC connection and db transactions (`may25.spring.walletapp.dao.DaoClass.java`)
+              -> Transaction History are managed in text file (`may25.spring.walletapp.dao/TransactionTracker.java`)
+        * Bean -> Customer Bean (`may25.spring.walletapp.bean/Customer.java`)
+    - DB credentials are injected via (`may25/resources/dbDetails.properties`)

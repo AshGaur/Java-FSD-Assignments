@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<!-- For annotations to work with Spring -->
+	<context:annotation-config></context:annotation-config>
+		
+	<!-- Using JSR 250 annotations and properties file -->
+	<context:component-scan base-package="may25.spring.walletapp.bean"></context:component-scan>
+	<context:component-scan base-package="may25.spring.walletapp.dao"></context:component-scan>
+	<context:component-scan base-package="may25.spring.walletapp.service"></context:component-scan>
+	<context:component-scan base-package="may25.spring.walletapp.ui"></context:component-scan>
+	
+	
+</beans>
