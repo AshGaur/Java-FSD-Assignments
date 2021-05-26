@@ -4,7 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -29,6 +31,9 @@ public class DaoClass {
 	
 	@Resource
 	Customer customer;
+	
+	@Resource(name="otherBean")
+	Customer customerSecond;
 	
 	@Autowired
 	TransactionTracker tracker;
@@ -95,11 +100,69 @@ public class DaoClass {
 			if(wallet<0) {
 				throw new InvalidInputException("Insufficient Funds !");
 			}
-			tracker.writeFile(wallet, amount, isWithdrawal);
+			this.writeTransaction(isWithdrawal?0-amount:amount);
+//			tracker.writeTransaction(wallet, amount, isWithdrawal);
 			result.updateDouble("walletBalance", wallet);
 			result.updateRow();
 			return true;
 		}
 		throw new InvalidInputException("accountNumber not found in Database !");
+	}
+	
+	public boolean fundsTransfer(Double amount) throws SQLException {
+		Statement stmt = this.con.createStatement();
+		stmt.addBatch(String.format("UPDATE %s set walletBalance=walletBalance-%.2f where accountNumber=%d",
+				this.getTableName(),amount,this.customer.getAccountNumber()));
+		stmt.addBatch(String.format("UPDATE %s set walletBalance=walletBalance+%.2f where accountNumber=%d",
+				this.getTableName(),amount,this.customerSecond.getAccountNumber()));
+		int[] changes = stmt.executeBatch(); 
+		boolean isSuccessful = true;
+		for(int t:changes) {
+			if(t==0) {
+				isSuccessful = false;
+			}
+		}
+		if(isSuccessful) {
+			this.writeFundsTransfer(amount);
+		}
+		return isSuccessful;
+	}
+	
+	public String readTransactionHistory(String orderBy,String order) throws SQLException, InvalidInputException {
+		order = order.length()>0?order:"ASC";
+		if(! (order.toLowerCase().equals("asc") || order.toLowerCase().equals("desc"))) {
+			throw new InvalidInputException("Order unknown !");
+		}
+		orderBy = orderBy.length()>0?orderBy:"accountNumber";
+		this.query = "select * from transactions order by "+orderBy+" "+order;
+		this.pstmt = this.con.prepareStatement(this.query);
+		StringBuffer buffer = new StringBuffer("");
+		ResultSet result = this.pstmt.executeQuery();
+		ResultSetMetaData rsmd = this.pstmt.getMetaData();
+		int noOfColumns = rsmd.getColumnCount();
+		while(result.next()) {
+			for(int i=1;i<=noOfColumns;i++) {
+				buffer.append(String.format("%s :%-10s ", rsmd.getColumnName(i),result.getString(i)));
+			}
+			buffer.append("\n");
+		}
+		return new String(buffer);
+	}
+	
+	void writeTransaction(Double amount) throws SQLException{
+		this.query = "insert into transactions(accountNumber,amount) values(?,?)";
+		this.pstmt = this.con.prepareStatement(this.query);
+		this.pstmt.setInt(1, this.getCustomer().getAccountNumber());
+		this.pstmt.setDouble(2, amount);
+		this.pstmt.executeUpdate();
+	}
+	
+	void writeFundsTransfer(Double amount) throws SQLException{
+		this.query = "insert into transactions(accountNumber,amount,source) values(?,?,?)";
+		this.pstmt = this.con.prepareStatement(this.query);
+		this.pstmt.setInt(1, this.getCustomerSecond().getAccountNumber());
+		this.pstmt.setDouble(2, amount);
+		this.pstmt.setInt(3, this.getCustomer().getAccountNumber());
+		this.pstmt.executeUpdate();
 	}
 }

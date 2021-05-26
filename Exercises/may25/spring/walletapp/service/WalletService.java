@@ -5,10 +5,12 @@ import java.sql.SQLException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import may25.spring.walletapp.dao.DaoClass;
 import may25.spring.walletapp.dao.TransactionTracker;
 
+@Service
 @Component("walletService")
 public class WalletService implements WalletServe{
 	@Autowired
@@ -42,8 +44,16 @@ public class WalletService implements WalletServe{
 	}
 
 	@Override
-	public String getTransactionHistory() {
-		return this.tracker.readTransactions();
+	public String fundsTransfer(int senderAccount,int receiverAccount,double amount) throws SQLException {
+		this.dao.getCustomer().setAccountNumber(senderAccount);
+		this.dao.getCustomerSecond().setAccountNumber(receiverAccount);
+		return this.dao.fundsTransfer(amount)?"Transaction Complete !":"Transaction Unsuccessful !";
+	}
+	
+	@Override
+	public String getTransactionHistory(String orderBy,String order) throws SQLException, InvalidInputException {
+//		return this.tracker.readTransactions();
+		return this.dao.readTransactionHistory(orderBy,order);
 	}
 	
 	//-------------------------- Validators -------------------------------

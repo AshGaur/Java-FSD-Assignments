@@ -73,13 +73,14 @@ public class App
     					System.out.print("Amount:");
     					Double amount = walletService.validateFunds(sc.nextLine());
     					
-    					System.out.println("Sender Account:"+walletService.makeTransaction(senderAccountNo,amount,true));
-    					System.out.println("Receiver Account:"+walletService.makeTransaction(receiverAccountNo,amount,false));
+    					System.out.println(walletService.fundsTransfer(senderAccountNo,receiverAccountNo,amount));
     					break;
     				}
     				case 4: {
+    					System.out.print("Enter Column by which data to sort :");String orderBy = sc.nextLine();
+    					System.out.print("Enter ASC for ascending or DESC for descending :");String order = sc.nextLine();
     					System.out.println("TRANSACTION HISTORY:");
-    					System.out.println(walletService.getTransactionHistory());
+    					System.out.println(walletService.getTransactionHistory(orderBy,order));
     					break;
     				}
     				case 5: System.out.println("ThankYou !");break;

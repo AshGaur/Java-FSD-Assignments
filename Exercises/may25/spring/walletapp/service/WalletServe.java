@@ -12,5 +12,6 @@ public interface WalletServe {
 	String addCustomer(String customerName,Double initAmount) throws SQLException;
 	Double getBalance(int accountNo) throws SQLException, InvalidInputException;
 	String makeTransaction(int accountNo, Double amount, boolean isWithdrawal) throws SQLException, InvalidInputException;
-	String getTransactionHistory();
+	String fundsTransfer(int senderAccount, int receiverAccount, double amount) throws SQLException;
+	String getTransactionHistory(String orderBy, String order) throws SQLException,InvalidInputException;
 }
